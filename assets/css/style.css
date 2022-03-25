@@ -118,6 +118,23 @@ section {
     background-color: var(--primary-color);
 }
 
+.two-col-grid {
+    display: -moz-grid;
+    display: grid;
+    gap: 2.4rem;
+    align-items: center;
+
+    -ms-grid-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 992px) {
+    .two-col-grid {    
+        -ms-grid-column: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ==========  NAVBAR ==========  */
 .navbar {
     position: absolute;
@@ -298,7 +315,7 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 0.4rem 2rem rgba(0,0,0,0.5);
+    box-shadow: 0 4rem 2rem rgba(0,0,0,0.5);
     transition: all 0.3s ease;
     margin: 0.4rem;
 }
@@ -319,8 +336,8 @@ section {
     color: var(--dark);
 }
 
-
 /* ==========  ABOUT ==========  */
+  
 
 /* ==========  SERVICES ==========  */
 
